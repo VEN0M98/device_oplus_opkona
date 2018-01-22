@@ -233,5 +233,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 CONFIG_IEEE80211AC := true
 CONFIG_IEEE80211AX := true
 
+CONFIG_ACS := true
+
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/opkona/BoardConfigVendor.mk
