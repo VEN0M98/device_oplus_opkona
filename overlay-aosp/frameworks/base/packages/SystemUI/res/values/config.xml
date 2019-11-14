@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 The LineageOS Project
+     Copyright (C) 2022 PixelExperience
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -14,4 +15,7 @@
     -->
     <integer name="config_udfps_hbm_type">0</integer>
 
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 </resources>
