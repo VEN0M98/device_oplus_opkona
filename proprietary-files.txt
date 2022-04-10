@@ -1137,7 +1137,6 @@ odm/vendor/firmware/iris5_ccf2.fw|f656f6229ef53d8cc31d67fc1ac0fc0b106b8abf
 
 # IRQ balance
 vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
