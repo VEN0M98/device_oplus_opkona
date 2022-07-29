@@ -34,7 +34,6 @@ PRODUCT_PACKAGES += \
 
 # Alert slider
 PRODUCT_PACKAGES += \
-    KeyHandler \
     tri-state-key-calibrate
 
 # APEX
@@ -187,10 +186,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
-# Doze
-PRODUCT_PACKAGES += \
-    OplusDoze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -372,6 +367,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     oplus-fwk
+
+# OnePlusSettings
+PRODUCT_PACKAGES += \
+    OnePlusSettings
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

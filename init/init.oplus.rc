@@ -4,8 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-on init
-    # Charger
+
+on post-fs
+    # System Vibration
+    chown system system /sys/devices/platform/soc/88c000.i2c/i2c-6/6-005a/leds/vibrator/level
+
+on fs 
+   # Charger
     write /proc/fastchg_fw_update 1
     write /proc/ui_soc_decimal 1
 
@@ -48,11 +53,21 @@ on boot
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
 
+    # Measured FPS
+    chown system system /sys/class/drm/sde-crtc-0/measured_fps
+
+    # Hyper Touch
+    chown system system /proc/touchpanel/game_switch_enable
+
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
     # TOF
     chown cameraserver cameraserver /dev/stmvl53l1_ranging
+
+    # TP Edge Touch Limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    write /proc/touchpanel/oplus_tp_direction 0
 
 on property:ro.boot.prjname=*
     # Display
