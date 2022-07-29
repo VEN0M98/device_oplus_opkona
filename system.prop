@@ -33,6 +33,9 @@ sys.qca1530=detect
 # Kernel
 ro.kernel.qemu.gles=0
 
+# LMK
+ro.config.low_ram=false
+
 # Media
 debug.stagefright.ccodec=1
 media.aac_51_output_enabled=true
