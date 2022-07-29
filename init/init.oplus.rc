@@ -12,6 +12,10 @@ on init
     setprop vendor.boot.project_name ${ro.boot.project_name}
 
 on fs
+    # System Vibration
+    chown system system /sys/devices/platform/soc/a8c000.i2c/i2c-6/6-005a/leds/vibrator/level
+
+on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
     write /proc/touchpanel/tp_fw_update 0
 
@@ -49,11 +53,23 @@ on boot
     chown system system /sys/kernel/oplus_display/panel_serial_number
     chown system system /sys/kernel/oplus_display/power_status
 
+    # Measured FPS
+    chown system system /sys/class/drm/sde-crtc-0/measured_fps
+
+    # High Touch Sample
+    chown system system /proc/touchpanel/game_switch_enable
+
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
     # TOF
     chown cameraserver cameraserver /dev/stmvl53l1_ranging
+ 
+    # TP Edge Touch Limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chown system system /proc/touchpanel/oplus_tp_limit_enable
+    chown system system /proc/touchpanel/oplus_tp_limit_whitelist
+    write /proc/touchpanel/oplus_tp_limit_enable 0
 
 on property:ro.boot.prjname=*
     # Display
