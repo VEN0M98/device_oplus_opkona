@@ -16,4 +16,6 @@
          1: Right -->
     <integer name="config_alertSliderLocation">1</integer>
 
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
 </resources>
