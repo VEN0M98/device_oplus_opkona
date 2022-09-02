@@ -13,7 +13,7 @@ persist.vendor.camera.privapp.list=com.oneplus.camera
 ro.oplus.version.base=19839.3.123.2022082613030810219754
 
 # Display
-debug.sf.enable_hwc_vds=1
+debug.sf.enable_hwc_vds=0
 debug.sf.auto_latch_unsignaled=true
 media.wfd.max_resolution=8
 
