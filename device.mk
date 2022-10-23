@@ -77,7 +77,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml \
+    $(LOCAL_PATH)/audio_instantnoodle/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/19821/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/audio_instantnoodlep/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/19811/etc/mixer_paths.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -243,6 +245,7 @@ PRODUCT_PACKAGES += \
     init.oplus.hw.rc.recovery \
     init.oplus.rc \
     init.oplus.sh \
+    init_overlayfs.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -329,6 +332,15 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget \
+    OPlusFrameworksResKebab\
+    OPlusSettingsProviderResKebab \
+    OPlusSystemUIResKebab \
+    OPlusFrameworksResInstantnoodle \
+    OPlusSettingsProviderResInstantnoodle \
+    OPlusSystemUIResInstantnoodle \
+    OPlusFrameworksResInstantnoodlep \
+    OPlusSettingsProviderResInstantnoodlep \
+    OPlusSystemUIResInstantnoodlep \
     WifiResTarget
 
 # Partitions

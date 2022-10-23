@@ -1,1 +1,1 @@
-require board=kona|OnePlus9R
+board=kona|OnePlus8|instantnoodle|OnePlus8Pro|instantnoodlep|OnePlus8T|OnePlus9R|lemonades|kebab|lemonkebab|IN2010|IN2011|IN2013|IN2015|IN2017|IN2019|IN2020|IN2021|IN2023|IN2025|LE2100|LE2101|KB2000|KB2001|KB2003|KB2005|KB2007
