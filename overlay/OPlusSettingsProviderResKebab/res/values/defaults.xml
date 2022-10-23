@@ -5,7 +5,7 @@
 -->
 <resources>
 
-    <!-- Max network scan search time in seconds -->
-    <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple" translatable="false">OnePlus 8T</string>
 
 </resources>
