@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_opkona.mk
+    $(LOCAL_DIR)/aosp_opkona.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_opkona-user \
-    arrow_opkona-userdebug \
-    arrow_opkona-eng
+    aosp_opkona-user \
+    aosp_opkona-userdebug \
+    aosp_opkona-eng
