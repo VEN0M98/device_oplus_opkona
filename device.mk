@@ -336,7 +336,9 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_foundation \
+    libstagefright_softomx
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
