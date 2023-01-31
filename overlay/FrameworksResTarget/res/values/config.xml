@@ -72,4 +72,10 @@
      <!-- Whether the device enable the non-standalone (NSA) mode of 5G NR.-->
      <bool name="config_telephony5gNonStandalone">true</bool>
 
+    <!-- The list of package IDs that are allowed to skip camera high frame rate checks. -->
+    <string-array name="config_cameraHFRPrivAppList" translatable="false">
+        <item>com.android.camera</item>
+        <item>com.oplus.camera</item>
+        <item>org.lineageos.aperture</item>
+    </string-array>
 </resources>
