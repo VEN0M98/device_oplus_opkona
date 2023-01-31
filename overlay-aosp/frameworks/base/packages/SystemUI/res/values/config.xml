@@ -13,7 +13,9 @@
     <!-- Color of the UDFPS Pressed view -->
     <color name="config_udfpsColor">#ffffe6</color>
 
-
+    <!-- Udfps vendor code -->
+    <integer name="config_udfpsVendorCode">0</integer>
+    
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
