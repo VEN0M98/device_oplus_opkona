@@ -11,8 +11,8 @@ ro.opa.device_model_id=ga-oplus-skill-os121-211011
 ro.com.google.lens.oem_camera_package=com.oneplus.camera
 
 # Expose AUX to oneplus camera
-persist.camera.manufacturer=oneplus
-persist.camera.oem.package=com.oneplus.camera
+persist.sys.aux.camera_manufacturer=oneplus
+persist.sys.aux.camera_oem_package=com.oneplus.camera
 
 # enable debugging
 persist.sys.usb.config=mtp,adb
