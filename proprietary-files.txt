@@ -447,6 +447,21 @@ vendor/lib64/libsymphony-cpu.so|521e63af19b3fd51b12bb48f95b3f58a90068cc2
 vendor/lib64/libsymphonypower.so|55d98fe86f9967163bbfb297cdf3a1784dc94a58
 vendor/lib64/libtriplecam_image_optical_zoom.so|f87aa99c54151ba163dfe9e9415b089b4991eb77
 vendor/lib64/libyuv2.so|33adb1fa71d6fd749b07e00ea0ff9fa5bc67de79
+system_ext/etc/camera/engineer_camera_config
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-external-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/camera.device@3.5-external-impl.so
+vendor/lib/camera.device@3.5-impl.so
+vendor/lib/camera.device@3.6-external-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-external-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.5-external-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/camera.device@3.6-external-impl.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
