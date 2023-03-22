@@ -186,6 +186,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security
 VENDOR_SECURITY_PATCH := 2023-06-05
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # SEPolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
