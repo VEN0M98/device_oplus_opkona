@@ -5,6 +5,9 @@ persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 persist.vendor.bt.a2dp.hal.implementation=true
 
+# Camera
+log.tag.CHIUSECASE=ERROR
+
 # Charger
 ro.charger.enable_suspend=1
 
