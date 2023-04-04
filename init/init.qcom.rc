@@ -54,6 +54,10 @@ on init
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
 
+    # Enable touchpanel's offscreen gestures
+    chown system system /proc/touchpanel/aosp_gesture_enable
+    write /proc/touchpanel/aosp_gesture_enable 1
+
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
