@@ -11,8 +11,8 @@
     <integer name="config_shift_interval">40</integer>
     
     <!-- Color of the UDFPS Pressed view -->
-    <color name="config_udfpsColor">#ffffe6</color>
-
+    <color name="config_udfpsColor">#00ffffff</color>
+    
     <!-- Udfps vendor code -->
     <integer name="config_udfpsVendorCode">0</integer>
     
