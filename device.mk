@@ -489,3 +489,6 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/opkona/opkona-vendor.mk)
+$(call inherit-product, device/qcom/common/system/perf/qti-perf.mk)
+$(call inherit-product, device/qcom/common/vendor/perf-legacy/qti-perf-legacy.mk)
+$(call inherit-product, device/qcom/common/vendor/adreno-6xx-legacy/qti-adreno-6xx-legacy.mk)
