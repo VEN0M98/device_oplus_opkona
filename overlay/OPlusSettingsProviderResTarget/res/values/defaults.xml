@@ -5,7 +5,7 @@
 -->
 <resources>
 
-    <!-- Color of the UDFPS Pressed view -->
-    <color name="config_udfpsColor">#ffffe6</color>
+    <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
+    <string name="def_device_name_simple" translatable="false">OnePlus 9R</string>
 
 </resources>
