@@ -137,4 +137,7 @@
         <item>us.zoom.videomeetings</item>
     </string-array>
 
+    <!-- Boost Framework -->
+    <bool name="config_supportsBoostFramework">true</bool>
+
 </resources>
