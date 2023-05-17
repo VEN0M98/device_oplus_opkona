@@ -19,4 +19,7 @@
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">true</bool>
 
+   <!-- BLKI Maintainer --> 
+    <string name="blki_maintainer_name" translatable="false">VEN0M98</string> 
+    <string name="blki_maintainer_group" translatable="false">https://t.me/venom98romalioth</string>
 </resources>
