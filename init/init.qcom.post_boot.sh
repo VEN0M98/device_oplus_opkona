@@ -475,6 +475,21 @@ case "$emmc_boot"
     ;;
 esac
 
+# Runtime fs tuning
+echo 128 > /sys/block/sda/queue/read_ahead_kb
+echo 128 > /sys/block/sda/queue/nr_requests
+echo 1 > /sys/block/sda/queue/iostats
+echo 128 > /sys/block/dm-0/queue/read_ahead_kb
+echo 128 > /sys/block/dm-1/queue/read_ahead_kb
+echo 128 > /sys/block/dm-2/queue/read_ahead_kb
+echo 128 > /sys/block/dm-3/queue/read_ahead_kb
+echo 128 > /sys/block/dm-4/queue/read_ahead_kb
+echo 128 > /sys/block/dm-5/queue/read_ahead_kb
+echo 128 > /sys/block/dm-6/queue/read_ahead_kb
+echo 128 > /sys/block/dm-7/queue/read_ahead_kb
+echo 128 > /sys/block/dm-8/queue/read_ahead_kb
+echo 128 > /sys/block/dm-9/queue/read_ahead_kb
+
 # Post-setup services
 case "$target" in
     "msm8660" | "msm8960" | "msm8226" | "msm8610" | "mpq8092" )
