@@ -10,6 +10,7 @@ on init
     write /proc/ui_soc_decimal 1
 
     setprop vendor.boot.project_name ${ro.boot.project_name}
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
 on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
@@ -65,6 +66,9 @@ on property:sys.boot_completed=1
     copy /vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-1186717196.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/1000-1000-no-exp-958228818.pfm
+
+    # Migrate tasks again in case kernel threads are created during boot
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
