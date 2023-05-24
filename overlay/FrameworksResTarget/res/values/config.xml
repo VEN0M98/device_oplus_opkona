@@ -74,4 +74,7 @@
 
      <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
      <integer name="config_screenRecorderMaxFramerate">120</integer>
+
+     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+     <bool name="config_dozePulsePickup">true</bool>
 </resources>
