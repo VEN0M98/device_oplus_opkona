@@ -1,4 +1,4 @@
-#! /vendor/bin/sh
+	#! /vendor/bin/sh
 
 # Copyright (c) 2012-2013, 2016-2020, The Linux Foundation. All rights reserved.
 #
@@ -495,6 +495,9 @@ echo 128 > /sys/block/dm-9/queue/read_ahead_kb
 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 echo "schedutil" > /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor
+echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 10000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
 echo 1 > /dev/stune/foreground/schedtune.prefer_idle
 echo 0 > /dev/stune/foreground/schedtune.prefer_high_cap
 echo 0 > /dev/stune/foreground/schedtune.boost
