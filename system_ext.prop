@@ -15,6 +15,7 @@ ro.oplus.version.base=19839.3.123.2022082613030810219754
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
+media.wfd.max_resolution=8
 
 # CNE
 persist.vendor.cne.feature=1
