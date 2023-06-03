@@ -365,9 +365,7 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResInstantnoodle \
     OPlusFrameworksResInstantnoodlep \
     OPlusSettingsProviderResInstantnoodlep \
-    OPlusSystemUIResInstantnoodlep \
-    WifiResTarget
-
+    OPlusSystemUIResInstantnoodlep 
 # Oplus-fwk
 PRODUCT_PACKAGES += \
     oplus-fwk

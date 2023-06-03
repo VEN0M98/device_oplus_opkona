@@ -6,6 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lemonkebab.mk
+    $(LOCAL_DIR)/aosp_opkona.mk
 
-
+COMMON_LUNCH_CHOICES := \
+    aosp_opkona-user \
+    aosp_opkona-userdebug \
+    aosp_opkona-eng
