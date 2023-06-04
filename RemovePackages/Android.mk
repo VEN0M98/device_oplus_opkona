@@ -7,8 +7,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
     arcore \
-    Chrome \
-    Chrome-Stub \
+    Aperture \
     ConnMO \
     ConnMetrics \
     DCMO \
