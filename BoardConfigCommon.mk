@@ -79,7 +79,7 @@ TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
@@ -169,7 +169,9 @@ VENDOR_SECURITY_PATCH := 2023-05-05
 
 # SEPolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS +=$(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

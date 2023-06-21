@@ -1,0 +1,3 @@
+on boot
+    chown system system /sys/kernel/oplus_display/aod_light_mode_set
+    chmod 0660 /sys/kernel/oplus_display/aod_light_mode_set
