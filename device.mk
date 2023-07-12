@@ -393,6 +393,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     oplus-fwk
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/com.oplus.camera.unit.sdk_product.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.oplus.camera.unit.sdk_product.xml \
+    $(LOCAL_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/oplus_camera_default_grant_permissions_list.xml \
+    $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-whitelist-oplus-system.xml:$(TARGET_COPY_OUT_SYSTEM)/sysconfig/hiddenapi-package-whitelist-oplus-system.xml
+
 # OnePlusSettings
 PRODUCT_PACKAGES += \
     OnePlusSettings
@@ -557,6 +562,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+#op permission 
+    
 # Inherit from the OnePlus Camera makefile.
 $(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
 
