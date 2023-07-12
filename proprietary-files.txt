@@ -284,7 +284,6 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcamxtintlessalgo_21.so
 vendor/lib64/libchilog.so
-vendor/lib64/libcamera_scene.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvface_api.so
 vendor/lib64/libcvp2.so
@@ -451,20 +450,6 @@ vendor/lib64/libyuv2.so|33adb1fa71d6fd749b07e00ea0ff9fa5bc67de79
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
-
-# Camera (CamX)
-vendor/lib/libcamxfdalgov7.so
-vendor/lib/libcamxfdalgov8.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
-vendor/lib64/libcamxfdalgov7.so
-vendor/lib64/libcamxfdalgov8.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
 
 # CDSP
 vendor/bin/cdsprpcd
